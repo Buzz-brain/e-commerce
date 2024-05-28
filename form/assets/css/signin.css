@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background: rgb(238, 238, 238);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-sec{
+    width: 40%;
+    margin: 20px 30%;
+    background: aliceblue;
+    padding: 20px 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.form-sec h1{
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.form-sec p{
+    text-align: center;
+    font-size: 14pt;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.form{
+
+}
+
+.form label{
+    
+}
+
+.form .input{
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.form select{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 100px;
+}
+
+.staff{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.staff .checkbox{
+    margin-right: 10px;
+}
+
+.form button{
+    width: 100%;
+    border: none;
+    background: blue;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    margin: 30px 0 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.form button:hover{
+    background: black;
+    color: white;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.link a{
+    text-decoration: none;
+    color: blue;
+}
+
+.storeid{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+    .form-sec{
+        width: 90%;
+        margin: 20px 5%;
+        background: aliceblue;
+        padding: 20px 30px;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    }
+}

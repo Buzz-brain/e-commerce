@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce - Navigation | Hoverable Sidebar Menu</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="sidebar">
+  <div class="logo-details">
+    <i class='bx bxl-c-plus-plus icon'></i>
+    <div class="logo_name">E-Commerce</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <i class='bx bx-search'></i>
+      <input type="text" placeholder="Search...">
+      <span class="tooltip">Search</span>
+    </li>
+    <li>
+      <a href="dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="pos.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">POS</span>
+      </a>
+      <span class="tooltip">POS</span>
+    </li>
+    <li>
+      <a href="orders.html">
+        <i class='bx bx-chat'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a href="products.html">
+        <i class='bx bx-pie-chart-alt-2'></i>
+        <span class="links_name">Product List</span>
+      </a>
+      <span class="tooltip">Product List</span>
+    </li>
+    <li>
+      <a href="addproducts.html">
+        <i class='bx bx-folder'></i>
+        <span class="links_name">Add Products</span>
+      </a>
+      <span class="tooltip">Add Products</span>
+    </li>
+    <li>
+      <a href="transactions.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Transactions</span>
+      </a>
+      <span class="tooltip">Transactions</span>
+    </li>
+    <li>
+      <a href="services.html">
+        <i class='bx bx-heart'></i>
+        <span class="links_name">External Services</span>
+      </a>
+      <span class="tooltip">External Services</span>
+    </li>
+    <li>
+      <a href="settings.html">
+        <i class='bx bx-cog'></i>
+        <span class="links_name">Settings</span>
+      </a>
+      <span class="tooltip">Settings</span>
+    </li>
+    <li class="profile">
+      <div class="profile-details">
+        <div class="name_job">
+          <div class="name">Bona Pearlx</div>
+          <div class="job">Web designer</div>
+        </div>
+      </div>
+      <i class='bx bx-log-out' id="log_out"></i>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+  <div class="head-sec">
+    <div class="logo">
+      TargetPrenuership
+    </div>
+    <ul>
+      <li>
+        <i class='bx bx-cart-alt'></i>
+      </li>
+      <li>
+        <img src=" " alt="">
+      </li>  
+    </ul>
+  </div>
+  <div class="blur" id="popupContainer">
+    <div class="myweb">
+      <div class="myweb-txt">
+        <h4>Info</h4>
+        <img id="closePopup" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB6klEQVRIS7WV61HDMBCEkw6gA9MBVICpAKgA0wFUQKgAOsBUAFRAUgFQAe4ASmA/j05zUSTZ/MjN7EiRT7d7DzvLxZ5tuef4izkErUScC6xNEDRo/RTehNeayBrBsS7eCRcTWUJ0KUC6YyWCTp4PwkFQuta6CUF+tUIOrlxWt9o/pgw5gpsQHN9e4CJBS4YQ7mA7JClBI6ePoJy0q/V1jK327+H3iVbKNlpKgBPOpIqamlE+n5llMuj8KEdAM18EHFBhl1faM0Vn7ozgT8KXwHOzb20a4VroOfQZcKETvHoCkRUNJW1IMHwRxBlizCBj8igtJd4ioPYESmufkgwueDqeVgWyP0wJLD3qRxBvnoTz0uzj9yNkCXiAQ4nAymIEvicmxgiieN8DK1FsULhlDbWac+x74iep1TN6RgXGSco1+V7nq0Jwak7AtPFGwgvHuGab7Mc0zrGcKY01H2WY9WStvb0vnDHmZBEHJX3RrEx+VAnYhLRD/OxC1oyojfOYVe5TwTRhNBGFc4zsyRRDfbw39bFLM0nJKAuqO4G979/oW/pcW7PwIWX+WFDFHqMngM81K+UgeB/2UcjUH441OFXuf0PKaBv5lm+NwBxJ/1RohSYoRPEgPAuMpH8X/k1QUz/5bE4Gk0FqDn8dH3wZVMt6iwAAAABJRU5ErkJggg=="/>
+      </div>
+      <h6 class="pro-title"></h6>
+      <p>Price: $<span class="pro-price"></span></p>
+      <hr>
+      <span><label for="">Quantity</label><input class="myweb-input" type="number" id="inputField"></span>
+      <div class="myweb-btn">
+        <button id="addToCartBtn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="blur" id="popupContainer2">
+    <div class="myweb">
+      <div class="myweb-txt">
+        <h4>Info</h4>
+        <img id="closePopup2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB6klEQVRIS7WV61HDMBCEkw6gA9MBVICpAKgA0wFUQKgAOsBUAFRAUgFQAe4ASmA/j05zUSTZ/MjN7EiRT7d7DzvLxZ5tuef4izkErUScC6xNEDRo/RTehNeayBrBsS7eCRcTWUJ0KUC6YyWCTp4PwkFQuta6CUF+tUIOrlxWt9o/pgw5gpsQHN9e4CJBS4YQ7mA7JClBI6ePoJy0q/V1jK327+H3iVbKNlpKgBPOpIqamlE+n5llMuj8KEdAM18EHFBhl1faM0Vn7ozgT8KXwHOzb20a4VroOfQZcKETvHoCkRUNJW1IMHwRxBlizCBj8igtJd4ioPYESmufkgwueDqeVgWyP0wJLD3qRxBvnoTz0uzj9yNkCXiAQ4nAymIEvicmxgiieN8DK1FsULhlDbWac+x74iep1TN6RgXGSco1+V7nq0Jwak7AtPFGwgvHuGab7Mc0zrGcKY01H2WY9WStvb0vnDHmZBEHJX3RrEx+VAnYhLRD/OxC1oyojfOYVe5TwTRhNBGFc4zsyRRDfbw39bFLM0nJKAuqO4G979/oW/pcW7PwIWX+WFDFHqMngM81K+UgeB/2UcjUH441OFXuf0PKaBv5lm+NwBxJ/1RohSYoRPEgPAuMpH8X/k1QUz/5bE4Gk0FqDn8dH3wZVMt6iwAAAABJRU5ErkJggg=="/>
+      </div>
+      <div class="form">
+        <form action="">
+          <div>
+            <div class="form-grp">
+              <div>
+                <label for="">Phone No:</label>
+                <input class="cusPhoneNo" type="number" placeholder="Phone Number" required>
+              </div>
+              <div>
+                <label for="">Name:</label>
+                <input class="cusFullName" type="text" placeholder="Enter Your Full Name" required>
+              </div>
+            </div>
+            <div class="form-grp">
+              <div>
+                <label for="">Email:</label>
+                <input class="cusMail" type="email" placeholder="Enter Your Email Address">
+              </div>
+              <div>
+                <label for="">Address:</label>
+                <input type="text" placeholder="Enter Your Address">
+              </div>
+            </div>
+            <div class="form-grp">
+              <div>
+                <label for="">Amount Due: ($)</label>
+                <input class="amt-due" type="text" placeholder="" disabled>
+              </div>
+              <div>
+                <label for="">Amount Paid: ($)</label>
+                <input class="amt-paid" type="text" placeholder="" required>
+              </div>
+            </div>
+            <div class="form-btn">
+              <button id="cancel" style="background: red; color: white;">Cancel</button>
+              <button id="confirm" style="background: green; color: white;">Confirm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="reciept">
+        <div class="line">
+          <center>logo</center>
+        <h5>Name: <span class="cusName"></span></h5>
+        <p>Date: <span id="datetime"></span></p>
+        <p>Order ID: <span class="orderID"></span></p>
+        <div class="sls-grp">
+          <div class="sls-flex">
+            <p class="prod"></p>
+            <p class="rate"></p>
+            <p class="tot"></p>
+          </div>
+          <div class="tot-flex">
+            <p>Total Amount</p>
+            <p class="tot-amt"></p>
+          </div>
+          <div class="pd-flex">
+            <p>Amount Paid</p>
+            <p class="amt-pd"></p>
+          </div>
+        </div>
+        <center><h4>Business Name</h4></center>
+        <center><p>Thank you for your purchase</p></center>
+        </div>
+        <div class="rct-btn">
+          <button class="closed" style="background: red;">Close</button>
+          <button id="print" style="background: green;">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-sec">
+    <div class="search-sec">
+      <div class="search">
+        <div class="search-box">
+          <input type="text" placeholder="Search Products">
+          <select name="" id="">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="pos-sec">
+          <div class="pos">
+            <img src="" alt="">
+            <div class="pos-txt">
+              <small class="pro-txt" id="proTxt"></small><br>
+              <small></small>
+              <button id="showPopup"><span class="showPopup"></span></button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="order-det">
+        <h4>Order Details</h4>
+        <hr>
+        <p class="empty">Your cart is empty.</p>
+        <div class="cart">
+          <span class="cart-hd"><small class="pro-name"></small><img id="close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB6klEQVRIS7WV61HDMBCEkw6gA9MBVICpAKgA0wFUQKgAOsBUAFRAUgFQAe4ASmA/j05zUSTZ/MjN7EiRT7d7DzvLxZ5tuef4izkErUScC6xNEDRo/RTehNeayBrBsS7eCRcTWUJ0KUC6YyWCTp4PwkFQuta6CUF+tUIOrlxWt9o/pgw5gpsQHN9e4CJBS4YQ7mA7JClBI6ePoJy0q/V1jK327+H3iVbKNlpKgBPOpIqamlE+n5llMuj8KEdAM18EHFBhl1faM0Vn7ozgT8KXwHOzb20a4VroOfQZcKETvHoCkRUNJW1IMHwRxBlizCBj8igtJd4ioPYESmufkgwueDqeVgWyP0wJLD3qRxBvnoTz0uzj9yNkCXiAQ4nAymIEvicmxgiieN8DK1FsULhlDbWac+x74iep1TN6RgXGSco1+V7nq0Jwak7AtPFGwgvHuGab7Mc0zrGcKY01H2WY9WStvb0vnDHmZBEHJX3RrEx+VAnYhLRD/OxC1oyojfOYVe5TwTRhNBGFc4zsyRRDfbw39bFLM0nJKAuqO4G979/oW/pcW7PwIWX+WFDFHqMngM81K+UgeB/2UcjUH441OFXuf0PKaBv5lm+NwBxJ/1RohSYoRPEgPAuMpH8X/k1QUz/5bE4Gk0FqDn8dH3wZVMt6iwAAAABJRU5ErkJggg=="/>
+          </span><br>
+          <p><span class="sls-rate">$<span class="pro-amt"></span> X <span class="pro-qty"></span></span> = $<span class="pro-total"></span></p>
+        </div>
+        <div class="money">
+          <small>Total: $<span class="total">0</span></small><br>
+          <small>Discount: <span class="discount">$0</span></small>
+          <br>
+          <button class="cleared" style="background: red;">Clear All</button>
+          <button class="proceed" style="background: green;">Proceed</button>
+        </div>
+      </div>
+    </div>
+    
+
+
+  </div>
+
+  
+
+
+</section>
+<!-- partial -->
+  <script  src="assets/js/script.js"></script>
+  <script  src="assets/js/pos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

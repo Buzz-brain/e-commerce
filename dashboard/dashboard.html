@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce - Navigation | Hoverable Sidebar Menu</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="sidebar">
+  <div class="logo-details">
+    <i class='bx bxl-c-plus-plus icon'></i>
+    <div class="logo_name">E-Commerce</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <i class='bx bx-search'></i>
+      <input type="text" placeholder="Search...">
+      <span class="tooltip">Search</span>
+    </li>
+    <li>
+      <a href="dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="pos.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">POS</span>
+      </a>
+      <span class="tooltip">POS</span>
+    </li>
+    <li>
+      <a href="orders.html">
+        <i class='bx bx-chat'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a href="products.html">
+        <i class='bx bx-pie-chart-alt-2'></i>
+        <span class="links_name">Product List</span>
+      </a>
+      <span class="tooltip">Product List</span>
+    </li>
+    <li>
+      <a href="addproducts.html">
+        <i class='bx bx-folder'></i>
+        <span class="links_name">Add Products</span>
+      </a>
+      <span class="tooltip">Add Products</span>
+    </li>
+    <li>
+      <a href="transactions.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Transactions</span>
+      </a>
+      <span class="tooltip">Transactions</span>
+    </li>
+    <li>
+      <a href="services.html">
+        <i class='bx bx-heart'></i>
+        <span class="links_name">External Services</span>
+      </a>
+      <span class="tooltip">External Services</span>
+    </li>
+    <li>
+      <a href="settings.html">
+        <i class='bx bx-cog'></i>
+        <span class="links_name">Settings</span>
+      </a>
+      <span class="tooltip">Settings</span>
+    </li>
+    <li class="profile">
+      <div class="profile-details">
+        <div class="name_job">
+          <div class="name">Bona Pearlx</div>
+          <div class="job">Web designer</div>
+        </div>
+      </div>
+      <i class='bx bx-log-out' id="log_out"></i>
+    </li>
+  </ul>
+</div>
+
+
+<section class="home-section">
+  <div class="head-sec">
+    <div class="logo">
+      TargetPrenuership
+    </div>
+    <ul>
+      <li>
+        <i class='bx bx-cart-alt'></i>
+      </li>
+      <li>
+        <img src=" " alt="">
+      </li>  
+    </ul>
+  </div>
+  <div class="body-sec">
+    <div class="top-grp">
+      <div class="top">
+        <div class="text">Dashboard</div>
+        <p>Store ID: YYYYMMDDHHMMSS</p>
+      </div>
+      <div class="wallet">
+        <h4>Wallet Value:</h4>
+        <p>$ 10</p>
+      </div>
+      <div class="website">
+        <button id="showPopup">My Website</button>
+      </div>
+    </div>
+    <div class="blur" id="popupContainer">
+      <div class="myweb">
+        <div class="myweb-txt">
+          <h4>My Website</h4>
+          <img id="closePopup" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB6klEQVRIS7WV61HDMBCEkw6gA9MBVICpAKgA0wFUQKgAOsBUAFRAUgFQAe4ASmA/j05zUSTZ/MjN7EiRT7d7DzvLxZ5tuef4izkErUScC6xNEDRo/RTehNeayBrBsS7eCRcTWUJ0KUC6YyWCTp4PwkFQuta6CUF+tUIOrlxWt9o/pgw5gpsQHN9e4CJBS4YQ7mA7JClBI6ePoJy0q/V1jK327+H3iVbKNlpKgBPOpIqamlE+n5llMuj8KEdAM18EHFBhl1faM0Vn7ozgT8KXwHOzb20a4VroOfQZcKETvHoCkRUNJW1IMHwRxBlizCBj8igtJd4ioPYESmufkgwueDqeVgWyP0wJLD3qRxBvnoTz0uzj9yNkCXiAQ4nAymIEvicmxgiieN8DK1FsULhlDbWac+x74iep1TN6RgXGSco1+V7nq0Jwak7AtPFGwgvHuGab7Mc0zrGcKY01H2WY9WStvb0vnDHmZBEHJX3RrEx+VAnYhLRD/OxC1oyojfOYVe5TwTRhNBGFc4zsyRRDfbw39bFLM0nJKAuqO4G979/oW/pcW7PwIWX+WFDFHqMngM81K+UgeB/2UcjUH441OFXuf0PKaBv5lm+NwBxJ/1RohSYoRPEgPAuMpH8X/k1QUz/5bE4Gk0FqDn8dH3wZVMt6iwAAAABJRU5ErkJggg=="/>
+        </div>
+        <input class="myweb-input" type="text" id="inputField" disabled>
+        <div class="myweb-btn">
+          <a href="../Ecommerce/home.html"><button id="visit">Visit</button></a>
+          <button id="copyButton">Copy</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-sec">
+      <div class="product" id="product">
+        <div class="product-grp">
+          <div class="product-qty">
+            <h4>PRODUCTS</h4>
+            <P>0</P>
+          </div>
+          <div class="product-icon">
+            <i class='bx bx-pie-chart-alt-2'></i>
+          </div>
+        </div>
+        <div class="product-txt">
+          <p>All Products Recorded</p>
+        </div>
+      </div>
+      <div class="customers">
+        <div class="customers-grp">
+          <div class="customers-qty">
+            <h4>CUSTOMERS</h4>
+            <P>0</P>
+          </div>
+          <div class="customers-icon">
+            <i class='bx bx-user'></i>
+          </div>
+        </div>
+        <div class="customers-txt">
+          <p>All Customers Recorded</p>
+        </div>
+      </div>
+      <div class="sales" id="sales">
+        <div class="sales-grp">
+          <div class="sales-qty">
+            <h4>MONTH SALES COUNT</h4>
+            <P>0</P>
+          </div>
+          <div class="sales-icon">
+            <i class='bx bx-user'></i>
+          </div>
+        </div>
+        <div class="sales-txt">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg><span>0%</span>
+          <p>Compare to last month</p>
+        </div>
+      </div>
+      <div class="visitors">
+        <div class="visitors-grp">
+          <div class="visitors-qty">
+            <h4>MONTH WEBSITE VISITORS</h4>
+            <P>0</P>
+          </div>
+          <div class="visitors-icon">
+            <i class='bx bx-cog'></i>
+          </div>
+        </div>
+        <div class="visitors-txt">
+          <p>Number of website visitors</p>
+        </div>
+      </div>
+    </div>
+    <div class="orders">
+      <h4>Ongoing Orders</h4>
+      <hr>
+      <div class="show-grp">
+        <div class="show">
+          <p>Show</p>
+          <select name="" id="">
+            <option value="">10</option>
+            <option value="">25</option>
+            <option value="">50</option>
+            <option value="">100</option>
+          </select>
+          <p>entries</p>
+        </div>
+        <div class="search">
+          <label for="">Search:</label><br>
+          <input type="text">
+        </div>
+      </div>
+      <hr>
+      <div class="table-sec">
+        <table>
+          <tr>
+            <th>S/N</th>
+            <th>CLIENT</th>
+            <th>ID/TRACKING</th>
+            <th>AMOUNT/DATE</th>
+            <th>STATUS</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="orders-rem">
+        <p>Showing 0 to 0 of 0 entries</p>
+      </div>
+    </div>
+    <div class="orders">
+      <h4>COMPLETED ORDERS</h4>
+      <hr>
+      <div class="show-grp">
+        <div class="show">
+          <p>Show</p>
+          <select name="" id="">
+            <option value="">10</option>
+            <option value="">25</option>
+            <option value="">50</option>
+            <option value="">100</option>
+          </select>
+          <p>entries</p>
+        </div>
+        <div class="search">
+          <label for="">Search:</label><br>
+          <input type="text">
+        </div>
+      </div>
+      <hr>
+      <div class="table-sec">
+        <table>
+          <tr>
+            <th>S/N</th>
+            <th>CLIENT</th>
+            <th>ID/TRACKING</th>
+            <th>AMOUNT/DATE</th>
+            <th>STATUS</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="orders-rem">
+        <p>Showing 0 to 0 of 0 entries</p>
+      </div>
+    </div>
+    
+    <div class="ft">
+      <p>© 2024 TargetPrenuership. All Rights Reserved.</p>
+    </div>
+
+  </div>
+  
+
+
+</section>
+<!-- partial -->
+  <script  src="assets/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,851 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hd-sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo-sec{
+    display: flex;
+}
+
+.logo{
+
+}
+
+.logo h1{
+    margin-top: 5px;
+}
+
+.nav-sec{
+    
+}
+
+.nav-sec ul{
+    display: flex;
+}
+
+.nav-sec ul li{
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 13pt;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown a{
+    background: white;
+    border: none;
+}
+
+.dropdown a:hover{
+    background: white;
+}
+
+
+
+.nav-sec ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-sec ul li a:hover{
+    color: blue;
+}
+
+.hd-btn{
+    padding: 8px;
+}
+
+.hd-btn button{
+    border: none;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    font-size: 11pt;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hd-btn button a{
+    text-decoration: none;
+    color: white;
+}
+
+.hd-btn .sin{
+    background: black;
+}
+
+.hd-icn{
+
+}
+
+.hd-icn i{
+
+}
+
+.ctrl-btn{
+    display: none;
+}
+
+.ctrl-btn button{
+
+}
+
+
+
+
+
+
+
+
+
+.exp-sp{
+    color: blue;
+}
+
+.exp-sec{
+    display: flex;
+}
+
+.exp-txt{
+    padding: 20px 70px 20px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.exp-txt h1{
+    font-size: 45pt;
+        
+}
+
+.exp-txt p{
+    font-size: 17pt;
+    padding-right: 180px;
+    margin-top: 30px;
+    color: rgb(67, 63, 63);
+}
+
+.exp-txt button{
+    border: none;
+    padding: 15px 30px;
+    font-size: 15pt;
+    border-radius: 10px;
+    margin-top: 25px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.exp-txt button a{
+    text-decoration: none;
+    color: white;
+}
+
+.exp-vid{
+
+}
+
+.exp-vid img{
+
+}
+
+.exp-vid p{
+    font-size: 12pt;
+}
+
+.exp-img{
+
+}
+
+.exp-img img{
+    width: 500px;
+    height: 400px;
+    border-radius: 20% 50%;
+    margin: 70px 70px 0 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+.ben-sec{
+    display: flex;
+    padding-top: 100px;
+}
+
+.ben{
+    padding: 80px;
+    text-align: center;
+}
+
+.ben img{
+
+}
+
+.ben h3{
+    padding: 25px 0;
+    color: rgb(96, 96, 226);
+}
+
+.ben p{
+    font-size: 15pt;
+}
+
+.care-sec{
+    display: flex;
+    margin-top: 70px;
+    padding-bottom: 100px;
+}
+
+.care-img{
+    padding: 50px 30px 70px 80px;
+}
+
+.care-img img{
+    width: 500px;
+    height: 400px;
+    border-radius: 50% 20%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+.care-txt{
+    padding: 0 120px 0 80px;
+}
+
+.care-txt h2{
+    font-size: 32pt;
+    color: blue;
+}
+
+.care-txt p{
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.care-txt a{
+    text-decoration: none;
+    font-size: 15pt;
+    color: blue;
+}
+
+.care-list{
+    display: flex;
+}
+
+.care-list i{
+    margin: 10px 10px 0 0;
+}
+
+.care-list p{
+
+}
+
+.int{
+
+}
+
+.int h1{
+    margin-top: 50px;
+    font-size: 30pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.biz-sec{
+    display: flex;
+}
+
+.biz{
+    padding: 130px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.biz img{
+    margin-bottom: 10px;
+    width: 70px;
+}
+
+.biz h4{
+    font-size: 17pt;
+    margin-bottom: 12px;
+    color: rgb(81, 81, 219);
+}
+
+.biz p{
+    font-size: 14pt;
+}
+
+.dep-sec{
+    display: flex;
+}
+
+.dep-img{
+
+}
+
+.dep-img img{
+    width: 500px;
+    height: 400px;
+    margin: 100px;
+}
+
+.dep-txt{
+    padding: 20px 60px 0 0;
+}
+
+.dep-txt h3{
+    font-size: 32pt;
+    margin-bottom: 30px;
+    color: blue;
+}
+
+.dep-txt p{
+    font-size: 16pt;
+}
+
+.dep-txt a{
+    text-decoration: none;
+    color: blue;
+    font-size: 15pt;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.deplist-grp{
+    margin: 25px 0;
+}
+
+.dep-list{
+    display: flex;
+    padding-top: 15px;
+}
+
+.dep-list i{
+    color: green;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.dep-list p{
+
+}
+
+.mben-sec{
+    background: black;
+    color: white;
+}
+
+.mben-sec h2{
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 80px;
+}
+
+.mbengen-grp{
+    padding-bottom: 0px;
+}
+
+.mben-grp{
+    display: flex;
+    place-content: center;
+}
+
+.mben{
+    width: 35%;
+    margin: 20px;
+    background: rgb(64, 63, 63);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.mben-img{
+
+}
+
+.mben-img i{
+
+}
+
+.mben-txt{
+
+}
+
+.mben-txt h4{
+    font-size: 15pt;
+    margin-bottom: 10px;
+    color: bisque;
+}
+
+.mben-txt p{
+    font-size: 13pt;
+}
+
+.pay-sec{
+
+}
+
+.pay-sec h5{
+    text-align: center;
+    font-size: 15pt;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.pay-sec h2{
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 15px;
+}
+
+.check{
+    color: green;
+}
+
+.adjust{
+    color: red;
+}
+
+.pay-grp{
+    display: flex;
+    place-content: center;
+}
+
+.pay{
+    width: 40%;
+    margin: 20px;
+    background: whitesmoke;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pay-gen{
+    padding: 25px;
+    
+}
+
+.pay-grp .payA{
+    margin-top: 20px;
+}
+
+.payC{
+    
+}
+
+.pay button{
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 15px;
+    font-size: 15pt;
+    margin: 10px 0;
+    background: rgb(81, 81, 219);
+    color: bisque;
+    cursor: pointer;
+}
+
+.pay button:hover{
+    background: blue;
+}
+
+.pay button a{
+    text-decoration: none;
+    color: white;
+}
+
+.pay-cat{
+
+}
+
+.pay-cat h4{
+    font-size: 15pt;
+    padding-bottom: 10px;
+}
+
+.pay-cat p{
+    font-size: 14pt;
+}
+
+.pay-amt{
+    margin-top: 20px;
+}
+
+.pay-amt h1{
+
+}
+
+.pay-amt h1 span{
+
+}
+
+.pay-amt p{
+    padding:  10px 0;
+}
+
+.pay-list{
+    display: flex;
+    margin: 10px 0;
+}
+
+.pay-list i{
+    margin-right: 15px;
+}
+
+.pay-list p{
+
+}
+
+.pay-hd{
+    background: blue;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+.pay-hd h5{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.join{
+    text-align: center;
+    align-items: center;
+    background: rgb(81, 81, 219);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px 100px;
+    padding: 80px;
+    position: absolute;
+}
+
+.join h5{
+    font-size: 17pt;
+    padding-bottom: 20px;
+    font-weight: light;
+    color: bisque;
+}
+
+.join h2{
+    font-size: 40pt;
+}
+
+.join button{
+    border: none;
+    padding: 15px 30px;
+    font-size: 15pt;
+    margin-top: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: bisque;
+}
+
+.join button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+.ft{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    padding: 320px 0 70px 0;
+    margin-top: 280px;
+}
+
+.ft-txt{
+    width: 30%;
+}
+
+.ft-txt h3{
+    font-size: 20pt;
+    padding-bottom: 15px;
+    color: bisque;
+}
+
+.ft-txt p{
+    font-size: 15pt;
+}
+
+.ft-link{
+    margin-top: 50px;
+}
+
+.ft-link ul li{
+    margin-bottom: 15px;
+}
+
+.ft-link ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ft-news{
+    width: 27%;
+}
+
+.ft-news h5{
+    font-size: 13pt;
+    margin-bottom: 30px;
+    color: rgb(248, 214, 171);
+}
+
+.ft-news p{
+    margin-top: 30px;
+}
+
+.ft-news form input{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.ft-news form button{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background: rgb(81, 81, 219);
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    .dropdown{
+        display: block;
+        
+    }
+
+    .dropdown img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-sec{
+        display: none;
+    }
+
+    .hd-btn{
+        display: none;
+    }
+
+    .logo h1{
+        font-size: 20pt;
+    }
+
+    .hd-sec{
+        padding-left: 20px;
+    }
+
+
+
+
+
+    .exp-sec{
+        flex-direction: column;
+    }
+    
+    .exp-txt{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .exp-txt h1{
+        font-size: 30pt;
+        padding-top: 30px;
+    }
+
+    .exp-txt p{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        font-size: 16pt;
+    }
+
+    .exp-img{
+        
+    }
+
+    .exp-img img{
+        width: 90%;
+        height: 300px;
+        margin: 10% 5%;
+    }
+
+    .ben-sec{
+        flex-direction: column;
+    }
+
+    .care-sec{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .care-img{
+        padding: 0;
+    }
+
+    .care-img img{
+        width: 90%;
+        height: 300px;
+        margin: 10% 5%;
+    }
+
+    .care-txt{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .care-txt h2{
+        font-size: 25pt;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .ben-sec{
+        padding: 0;
+    }
+
+    .ben{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .ben img{
+        width: 10%;
+    }
+
+    .int h1{
+        margin: 0;
+        font-size: 23pt;
+    }
+    
+    .biz-sec{
+        flex-direction: column;
+    }
+
+    .biz{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .biz img{
+        width: 10%;
+    }
+
+    .biz h4{
+        font-size: 15pt;
+    }
+
+    .biz p{
+        font-size: 13pt;
+    }
+ 
+    .dep-sec{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .dep-img img{
+        width: 90%;
+        height: 300px;
+        margin: 10% 5%;
+    }
+
+    .dep-txt{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .dep-txt h3{
+        font-size: 20pt;
+    }
+
+    .dept{
+        display: none;
+    }
+
+    .mben-sec h2{
+        font-size: 18pt;
+        padding-top: 50px;
+    }
+
+    .mben-grp{
+        flex-direction: column;
+    }
+
+    .mben{
+        width: 90%;
+        padding: 20px;
+        margin: 5%;
+    }
+
+    .pay-grp{
+        flex-direction: column;
+    }
+
+    .pay{
+        width: 90%;
+        margin: 5%;
+    }
+
+    .join{
+        margin: 25% 5% 15%;
+        padding: 50px 10px;
+        width: 90%;
+    }
+
+    .join h5{
+        font-size: 15pt;
+    }
+
+    .join h2{
+        font-size: 25pt;
+    }
+
+
+
+
+
+    .ft{
+        flex-direction: column;
+    }
+
+    .ft-txt{
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .ft-news{
+        width: 90%;
+        margin: 10% 5% 0 5%;
+    }
+
+
+}

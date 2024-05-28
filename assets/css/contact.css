@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hd-sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo-sec{
+    display: flex;
+}
+
+.logo{
+
+}
+
+.logo h1{
+    margin-top: 5px;
+}
+
+.nav-sec{
+    
+}
+
+.nav-sec ul{
+    display: flex;
+}
+
+.nav-sec ul li{
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 13pt;
+}
+
+.nav-sec ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-sec ul li a:hover{
+    color: blue;
+}
+
+.hd-btn{
+    padding: 8px;
+}
+
+.hd-btn button{
+    border: none;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    font-size: 11pt;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hd-btn .sin{
+    background: black;
+}
+
+.hd-icn{
+
+}
+
+.hd-icn i{
+
+}
+
+.ctrl-btn{
+    display: none;
+}
+
+.ctrl-btn button{
+
+}
+
+
+
+
+
+
+.faq-sec{
+
+}
+
+.faq-sec h1{
+    text-align: center;
+    font-size: 38pt;
+    margin:  70px 0 40px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.faq-grp{
+
+}
+
+.faq{
+    width: 80%;
+    margin: 20px 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+.faq-hd{
+
+}
+
+.faq-hd h3{
+    background: blue;
+    color: aliceblue;
+    padding: 15px 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.faq p{
+    background: aliceblue;
+    padding: 50px;
+    line-height: 2.2;
+    font-size: 13pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.join{
+    text-align: center;
+    align-items: center;
+    background: rgb(81, 81, 219);
+    color: white;
+    border-radius: 10px;
+    margin: 50px 10%;
+    padding: 80px;
+    position: absolute;
+    width: 80%;
+}
+
+.join h5{
+    font-size: 17pt;
+    padding-bottom: 20px;
+    font-weight: light;
+    color: bisque;
+}
+
+.join h2{
+    font-size: 40pt;
+}
+
+.join button{
+    border: none;
+    padding: 15px 30px;
+    font-size: 15pt;
+    margin-top: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: bisque;
+}
+
+.ft{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    padding: 320px 0 70px 0;
+    margin-top: 280px;
+}
+
+.ft-txt{
+    width: 30%;
+}
+
+.ft-txt h3{
+    font-size: 20pt;
+    padding-bottom: 15px;
+    color: bisque;
+}
+
+.ft-txt p{
+    font-size: 15pt;
+}
+
+.ft-link{
+    margin-top: 50px;
+}
+
+.ft-link ul li{
+    margin-bottom: 15px;
+}
+
+.ft-link ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ft-news{
+    width: 27%;
+}
+
+.ft-news h5{
+    font-size: 13pt;
+    margin-bottom: 30px;
+    color: rgb(248, 214, 171);
+}
+
+.ft-news p{
+    margin-top: 30px;
+}
+
+.ft-news form input{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.ft-news form button{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background: rgb(81, 81, 219);
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .nav-sec{
+        display: none;
+    }
+
+    .hd-btn{
+        display: none;
+    }
+
+    .logo h1{
+        font-size: 20pt;
+    }
+
+    .hd-sec{
+        padding-left: 20px;
+    }
+
+
+
+
+
+
+
+    .faq-sec h1{
+        text-align: center;
+        font-size: 30pt;
+        margin:  70px 0 40px 0;
+        
+    }
+    
+    .faq-grp{
+    
+    }
+    
+    .faq{
+        width: 90%;
+        margin: 20px 5%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    }
+    
+    .faq-hd{
+    
+    }
+    
+    .faq-hd h3{
+        background: blue;
+        color: aliceblue;
+        padding: 15px 30px;
+        border-radius: 10px 10px 0 0;
+        line-height: 1.6;
+    }
+    
+    .faq p{
+        background: aliceblue;
+        padding: 30px;
+        line-height: 2.2;
+        font-size: 13pt;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .join{
+        margin: 25% 5% 15%;
+        padding: 50px 10px;
+        width: 90%;
+    }
+
+    .join h5{
+        font-size: 15pt;
+    }
+
+    .join h2{
+        font-size: 25pt;
+    }
+
+    .ft{
+        flex-direction: column;
+    }
+
+    .ft-txt{
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .ft-news{
+        width: 90%;
+        margin: 10% 5% 0 5%;
+    }
+
+
+}
